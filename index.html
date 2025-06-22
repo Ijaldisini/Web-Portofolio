@@ -2,38 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">iZall.</a>
-        
-        <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt="">
+    <!-- nav menu -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>iZall.</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">Services</a></div>
+                <div class="link"><a href="#">Skills</a></div>
+                <div class="link"><a href="#">Education</a></div>
+                <div class="link"><a href="#">Portfolio</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-        <div class="home-content">
-            <h1>Hi, I'm <span>Raditya</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Skills</a>
+                <a href="#">Education</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="images/profil.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left">
+                    Hi, my name
+                    <span>Raditya</span>
+                </h1>
+                <div class="typewriter">
+                    I'm a
+                    <span class="typewriter-text"></span>
+                    <label for="">|</label>
+                </div>
+                <p>lorem ipsum dolor sit ameet</p>
+                <div class="social-links">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </section>
+    
+
+    <!-- Services -->
+    <section class="servives" id="services">
+        <div class="content">
+            <div class="title">
+                <span>Services</span>
+            </div>
+            <div class="boxes">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Web Development</div>
+                <p>lorem ipsum dolor sit</p>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Programmer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+     <section class="skills" id="skills">
+        <div class="content">
+            <div class="title">
+                <span>My Skills</span>
+            </div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">
+                        Skills reflect our knowledge
+                    </div>
+                    <p data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione porro aperiam perspiciatis error quo doloremque obcaecati similique ipsum iure. Non ducimus voluptas laborum itaque aliquam accusantium repudiandae aspernatur minus dolor!</p>
+                    <div class="experience">
+                        <div class="num">10</div>
+                        <div class="exp">
+                            Years of <br />
+                            Experience
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic">Python</div>
+                        <div class="per">80%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">C#</div>
+                        <div class="per">65%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">JavaScript</div>
+                        <div class="per">30%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">HTML</div>
+                        <div class="per">40%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">CSS</div>
+                        <div class="per">40%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="content">
+            <div class="title">
+                <span>Contact Me</span>
+            </div>
+            <div class="text">
+                <div class="topic">
+                    Have any project?
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, reiciendis molestias beatae tenetur possimus quasi eum voluptatum, harum molestiae qui necessitatibus explicabo hic reprehenderit odio fugit velit delectus sint debitis!</p>
+                <div class="button">
+                    <button>Let's Chat</button>
+                </div>
+            </div>
+        </div>
+      </section>
+
 </body>
 </html>
