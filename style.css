@@ -323,6 +323,28 @@ section .button button:hover{
 }
 
 
+
+
+/* About */
+.about{
+    background-color: black;
+}
+
+.about{
+    margin-top: 200px;
+}
+
+.about-details p{
+    font-size: 40px;
+    color: white;
+}
+
+.about-details p{
+    padding: 20px 0;
+}
+
+
+
 /* Services */
 .services .boxes{
     display: flex;
@@ -381,6 +403,10 @@ section .button button:hover{
 /* Skills */
 .skills{
     background: black;
+}
+
+.skills{
+    margin-top: -100px;
 }
 
 .skills .content{
@@ -443,10 +469,18 @@ section .button button:hover{
     color: #98fb98;
 }
 
+.skills-details .topic{
+    font-size: 28px;
+    color: #98fb98;
+}
 
 /* Contact */
 .contact{
     background: black;
+}
+
+.contact{
+    margin-top: 100px;
 }
 
 .contact .content{
