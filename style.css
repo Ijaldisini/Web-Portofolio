@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
 
-*{
-    margin : 0;
-    padding : 0;
-    box-sizing : border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
@@ -12,44 +12,49 @@
     scroll-behavior: smooth;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     width: 100%;
     height: auto;
     background-color: black;
     overflow-x: hidden;
 }
 
+
+
+
 /* Custom scroll bar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: black;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #98fb98;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
-::webkit-scrollbar-thumb:hover{
+::webkit-scrollbar-thumb:hover {
     background: #98fb98;
 }
 
 
+
+
 /* navbar style */
-nav{
+nav {
     width: 100%;
     height: 10vh;
 }
 
-.nav-container{
+.nav-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -57,7 +62,7 @@ nav{
     align-items: center;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     color: #98fb98;
     text-shadow: 0 0 10px #98fb98;
@@ -66,13 +71,13 @@ nav{
     transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     scale: 1.3;
     filter: drop-shadow(0 0 10px #98fb98);
 }
 
 .hamburg,
-.cancel{
+.cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
@@ -83,11 +88,11 @@ nav{
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
-.nav-container .links{
+.nav-container .links {
     display: flex;
 }
 
-.nav-container .links a{
+.nav-container .links a {
     position: relative;
     font-size: 1.2rem;
     color: white;
@@ -97,7 +102,7 @@ nav{
     transition: 0.3s linear;
 }
 
-.nav-container .links a::before{
+.nav-container .links a::before {
     position: absolute;
     content: "";
     bottom: -3px;
@@ -108,15 +113,15 @@ nav{
     transition: 0.2s linear;
 }
 
-.nav-container .links a:hover::before{
+.nav-container .links a:hover::before {
     width: 100%;
 }
 
-.nav-container .links a:hover{
+.nav-container .links a:hover {
     color: #98fb98;
 }
 
-.dropdown{
+.dropdown {
     z-index: 100;
     position: absolute;
     top: 0;
@@ -128,7 +133,7 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown .links a{
+.dropdown .links a {
     display: flex;
     color: white;
     text-decoration: none;
@@ -138,16 +143,16 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown .links a:hover{
+.dropdown .links a:hover {
     background-color: #98fb98;
 }
 
-section{
+section {
     width: 100%;
     min-height: 90vh;
 }
 
-section .main-container{
+section .main-container {
     display: flex;
     justify-content: space-between;
     padding-left: 100px;
@@ -155,38 +160,38 @@ section .main-container{
     align-items: center;
 }
 
-.main-container .image{
+.main-container .image {
     width: 500px;
-    height: 80vh;
+    height: 590px;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px #98fb98;
 }
 
-.main-container .image img{
+.main-container .image img {
     width: 100%;
 }
 
-.main-container .content{
+.main-container .content {
     color: white;
     width: 40%;
 }
 
-.content h1{
+.content h1 {
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 
-.content h1 span{
+.content h1 span {
     color: #98fb98;
     text-shadow: 0 0 10px #98fb98;
 }
 
-.content .typewriter{
+.content .typewriter {
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
 }
 
-.content.typewriter-text{
+.content.typewriter-text {
     color: #98fb98;
     text-shadow: 0 0 10px #98fb98;
 }
@@ -204,12 +209,12 @@ section .main-container{
     }
 }
 
-.content p{
+.content p {
     font-size: clamp(04rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
 
-.social-links i{
+.social-links i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -224,14 +229,14 @@ section .main-container{
     transition: 0.2s linear;
 }
 
-.social-links i:hover{
+.social-links i:hover {
     scale: 1.3;
     color: black;
     background-color: #98fb98;
     filter: drop-shadow(0 0 10px #98fb98);
 }
 
-.content button{
+.content button {
     width: 50%;
     height: 6vh;
     margin: 30px;
@@ -245,7 +250,7 @@ section .main-container{
     transition: 0.2s linear;
 }
 
-.content button:hover{
+.content button:hover {
     scale: 1.1;
     color: #98fb98;
     border: 2px solid #98fb98;
@@ -254,25 +259,25 @@ section .main-container{
     box-shadow: 0 0 40px;
 }
 
-section .content{
+section .content {
     width: 80%;
     margin: 0px auto;
     font-family: 'Poppins', sans-serif;
 }
 
-.services .services-details{
+.services .services-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-section .title{
+section .title {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-section .title span{
+section .title span {
     color: white;
     font-size: 30px;
     font-weight: 600;
@@ -281,7 +286,7 @@ section .title span{
 }
 
 section .title span::before,
-section .title span::after{
+section .title span::after {
     content: '';
     position: absolute;
     height: 3px;
@@ -291,7 +296,7 @@ section .title span::after{
     bottom: 0;
 }
 
-section .title span::after{
+section .title span::after {
     bottom: -7px;
     width: 70%;
     left: 50%;
@@ -299,11 +304,11 @@ section .title span::after{
 }
 
 
-section .button{
+section .button {
     margin: 16px 0;
 }
 
-section .button button{
+section .button button {
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -316,7 +321,7 @@ section .button button{
     transition: all 0.4s ease;
 }
 
-section .button button:hover{
+section .button button:hover {
     border-color: #98fb98;
     background-color: white;
     color: #98fb98;
@@ -326,33 +331,33 @@ section .button button:hover{
 
 
 /* About */
-.about{
+.about {
     background-color: black;
 }
 
-.about{
+.about {
     margin-top: 200px;
 }
 
-.about-details p{
+.about-details p {
     font-size: 40px;
     color: white;
 }
 
-.about-details p{
+.about-details p {
     padding: 20px 0;
 }
 
 
 
 /* Services */
-.services .boxes{
+.services .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.services .boxes .box{
+.services .boxes .box {
     margin: 20px 0;
     width: calc(100% / 3 - 20px);
     text-align: center;
@@ -370,12 +375,12 @@ section .button button:hover{
     margin: 10px 0;
 }
 
-.services .boxes .box:hover{
+.services .boxes .box:hover {
     background: #98fb98;
     color: black;
 }
 
-.services .boxes .box .icon{
+.services .boxes .box .icon {
     height: 50px;
     width: 50px;
     background: #98fb98;
@@ -388,28 +393,28 @@ section .button button:hover{
     transition: all 0.4s ease;
 }
 
-.boxes .box:hover .icon{
+.boxes .box:hover .icon {
     background-color: black;
     color: #98fb98;
 }
 
 .services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.services .boxes .box:hover p {
     color: black;
     transition: all 0.4s ease;
 }
 
 
 /* Skills */
-.skills{
+.skills {
     background: black;
 }
 
-.skills{
+.skills {
     margin-top: -100px;
 }
 
-.skills .content{
+.skills .content {
     padding: 40px 0;
 }
 
@@ -419,27 +424,27 @@ section .button button:hover{
     align-items: center;
 }
 
-.skills-details .text{
+.skills-details .text {
     width: 50%;
 }
 
-.skills-details p{
+.skills-details p {
     color: white;
     text-align: justify;
 }
 
-.skills .skills-details .experience{
+.skills .skills-details .experience {
     display: flex;
     align-items: center;
     margin: 0 10px;
 }
 
-.skills .skills-details .experience .num{
+.skills .skills-details .experience .num {
     color: white;
     font-size: 80px;
 }
 
-.skills .skills-details .experience .exp{
+.skills .skills-details .experience .exp {
     color: white;
     margin-left: 20px;
     font-size: 18px;
@@ -447,48 +452,48 @@ section .button button:hover{
     margin: 0 6px;
 }
 
-.skills-details .boxes{
+.skills-details .boxes {
     width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.skills-details .box{
+.skills-details .box {
     width: calc(100% / 2 - 20px);
     margin: 20px 0;
 }
 
-.skills-details .boxes .topic{
+.skills-details .boxes .topic {
     font-size: 20px;
     color: #98fb98;
 }
 
-.skills-details .boxes .per{
+.skills-details .boxes .per {
     font-size: 60px;
     color: #98fb98;
 }
 
-.skills-details .topic{
+.skills-details .topic {
     font-size: 28px;
     color: #98fb98;
 }
 
 /* Contact */
-.contact{
+.contact {
     background: black;
 }
 
-.contact{
+.contact {
     margin-top: 100px;
 }
 
-.contact .content{
+.contact .content {
     margin: 0 auto;
     padding: 30px 0;
 }
 
-.contact .text{
+.contact .text {
     font-size: 50px;
     width: 80%;
     text-align: center;
@@ -498,29 +503,29 @@ section .button button:hover{
 
 
 /* Footer */
-footer{
+footer {
     background: #98fb98;
     padding: 15px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
-footer .text span{
+footer .text span {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
 
-footer .text span a{
+footer .text span a {
     font-weight: 500;
     color: black;
 }
 
-footer .text span a:hover{
+footer .text span a:hover {
     text-decoration: underline;
 }
 
-.scroll-button a{
+.scroll-button a {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -535,120 +540,120 @@ footer .text span a:hover{
 
 
 
-@media(max-width: 1000px){
-    .about .about-details{
+@media(max-width: 1000px) {
+    .about .about-details {
         justify-content: center;
         flex-direction: column;
     }
 
-    .about .about-details .left{
+    .about .about-details .left {
         display: flex;
         justify-content: center;
         width: 100%;
     }
 
-    .about-details.right{
+    .about-details.right {
         width: 90%;
         margin: 40px 0;
     }
 
-    .services .boxes .box{
+    .services .boxes .box {
         margin: 20px 0;
         width: calc(100% / 2 - 20px);
     }
-} 
+}
 
-@media(max-width: 900px){
-    .about .left img{
+@media(max-width: 900px) {
+    .about .left img {
         height: 350px;
         width: 350px;
     }
 }
 
-@media(max-width: 968px){
-    nav .logo{
+@media(max-width: 968px) {
+    nav .logo {
         position: absolute;
         top: 16px;
         left: 15px;
         font-size: 1.5rem;
     }
 
-    section .main-container{
+    section .main-container {
         padding-left: 0px;
         display: flex;
         flex-direction: column;
     }
 
-    .nav-container .links{
+    .nav-container .links {
         display: none;
     }
 
     .hamburg,
-    .cancel{
+    .cancel {
         opacity: 1;
         pointer-events: visible;
     }
 
     .dropdown.active {
-    transform: translateY(0);
+        transform: translateY(0);
     }
 
-    .main-container .content{
+    .main-container .content {
         margin-top: 20px;
         width: 80%;
     }
 
-    .social-links i{
+    .social-links i {
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1.5rem;
     }
 
-    .main-container .image{
+    .main-container .image {
         z-index: -1;
         width: 50%;
         height: 60%;
     }
 
-    .skills .skills-details{
+    .skills .skills-details {
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    .skills-details .text{
+    .skills-details .text {
         width: 100%;
         margin-bottom: 50px;
     }
 
-    .skills-details .boxes{
+    .skills-details .boxes {
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 
-    .services .boxes .box{
+    .services .boxes .box {
         margin: 20px 0;
         width: 100%;
     }
 
-    .contact .text{
+    .contact .text {
         width: 100%;
     }
 }
 
-@media(max-width: 500px){
-    main-container .image{
+@media(max-width: 500px) {
+    main-container .image {
         width: 50%;
         height: 60%;
         margin-bottom: 0px;
     }
 
-    .main-container button{
+    .main-container button {
         margin-top: 15px;
     }
 
-    .skills-details .boxes .per{
+    .skills-details .boxes .per {
         font-size: 50px;
         color: #98fb98;
     }
