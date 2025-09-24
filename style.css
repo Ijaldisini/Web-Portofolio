@@ -14,12 +14,18 @@
 
 html {
     font-size: 62.5%;
+    background: #5E5E5E;
+    background: linear-gradient(0deg, rgba(94, 94, 94, 1) 0%, rgba(69, 69, 69, 1) 34%, rgba(0, 0, 0, 1) 78%);
+    background-attachment: fixed;
+    overscroll-behavior: none;
+    
 }
 
 body {
     width: 100%;
     height: auto;
-    background-color: black;
+    background: #5e5e5e;
+    background: linear-gradient(0deg, rgba(94, 94, 94, 1) 0%, rgba(69, 69, 69, 1) 34%, rgba(0, 0, 0, 1) 78%);
     overflow-x: hidden;
 }
 
@@ -44,7 +50,6 @@ body {
 ::webkit-scrollbar-thumb:hover {
     background: #98fb98;
 }
-
 
 
 
@@ -141,7 +146,7 @@ nav.hamburger-open {
     width: 30%;
     height: 100vh;
     backdrop-filter: blur(4px) brightness(40%);
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px    #98fb98;
     transition: 0.3s ease-in-out;
 }
 
@@ -176,7 +181,7 @@ nav.hamburger-open {
     transform: translateX(-50%);
     width: 0%;
     height: 3px;
-    background-color: #98fb98;
+    background-color: black;
     transition: 0.2s linear;
 }
 
@@ -437,10 +442,6 @@ section .button button:hover {
 
 /* About */
 .about {
-    background-color: black;
-}
-
-.about {
     margin-top: 100px;
 }
 
@@ -513,7 +514,6 @@ section .button button:hover {
 
 /* Skills */
 .skills {
-    background: black;
     margin-top: -50px;
 }
 
@@ -581,7 +581,6 @@ section .button button:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: black;
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -672,10 +671,6 @@ section .button button:hover {
 
 /* Contact */
 .contact {
-    background: black;
-}
-
-.contact {
     margin-top: 100px;
     margin-bottom: -90px;
 }
@@ -705,7 +700,6 @@ footer {
 footer .text span {
     font-size: 15px;
     font-weight: 500;
-    color: black;
 }
 
 footer .text span a {
