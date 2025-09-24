@@ -43,7 +43,6 @@ window.addEventListener("scroll", () => {
   const rect = timeline.getBoundingClientRect();
   const windowHeight = window.innerHeight;
 
-  // progress scroll (0 - 1)
   let progress = 1 - rect.bottom / (timeline.offsetHeight + windowHeight);
 
   if (progress < 0) progress = 0;
