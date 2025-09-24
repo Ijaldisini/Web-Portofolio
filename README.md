@@ -1,0 +1,1 @@
+Ini adalah website portofolio pertama saya yang dibuat menggunakan HTML, CSS, dan JavaScript. Website ini menampilkan perjalanan saya dalam mempelajari pengembangan web, mulai dari proyek sederhana hingga desain interaktif.
